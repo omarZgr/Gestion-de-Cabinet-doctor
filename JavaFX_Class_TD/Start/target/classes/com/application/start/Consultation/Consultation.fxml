@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="425.0" maxWidth="567.0" minHeight="425.0" minWidth="567.0" prefHeight="425.0" prefWidth="567.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.application.start.Dashboard.Consultation001.ConsultationCn">
+   <children>
+      <AnchorPane fx:id="zoneOutput" disable="true" layoutX="29.0" layoutY="92.0" prefHeight="286.0" prefWidth="306.0">
+         <children>
+            <VBox layoutY="20.0" prefHeight="255.0" prefWidth="306.0">
+               <children>
+                  <AnchorPane maxHeight="50.0" minHeight="55.0" prefHeight="55.0" prefWidth="285.0">
+                     <children>
+                        <Label layoutX="11.0" layoutY="9.0" prefHeight="35.0" prefWidth="95.0" text="Nom :">
+                           <font>
+                              <Font name="Cambria" size="19.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="outputNom" editable="false" layoutX="122.0" layoutY="16.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane maxHeight="50.0" minHeight="55.0" prefHeight="55.0" prefWidth="285.0">
+                     <children>
+                        <Label layoutX="11.0" layoutY="9.0" prefHeight="35.0" prefWidth="95.0" text="Prenom:">
+                           <font>
+                              <Font name="Cambria" size="19.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="outputPrenom" editable="false" layoutX="122.0" layoutY="16.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane maxHeight="50.0" minHeight="55.0" prefHeight="55.0" prefWidth="285.0">
+                     <children>
+                        <Label layoutX="11.0" layoutY="9.0" prefHeight="35.0" prefWidth="95.0" text="Tel :">
+                           <font>
+                              <Font name="Cambria" size="19.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="outputTel" editable="false" layoutX="122.0" layoutY="16.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane maxHeight="50.0" minHeight="55.0" prefHeight="55.0" prefWidth="285.0">
+                     <children>
+                        <Label layoutX="11.0" layoutY="9.0" prefHeight="35.0" prefWidth="95.0" text="D.Naiss :">
+                           <font>
+                              <Font name="Cambria" size="19.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="outputDNaissance" editable="false" layoutX="122.0" layoutY="16.0" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <Label layoutX="29.0" layoutY="14.0" prefHeight="35.0" prefWidth="108.0" text="Patient : ">
+         <font>
+            <Font name="Cambria" size="19.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="inputCin" layoutX="132.0" layoutY="19.0" prefHeight="25.0" prefWidth="201.0" />
+      <Label layoutX="49.0" layoutY="31.0" prefHeight="35.0" prefWidth="27.0" style="-fx-underline: true;" text="cin">
+         <font>
+            <Font name="Comic Sans MS" size="13.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="362.0" layoutY="141.0" onMouseClicked="#ajouter" prefHeight="145.0" prefWidth="163.0" style="-fx-background-color: green;" text="Ajouter" textFill="WHITE">
+         <font>
+            <Font name="Arial Unicode MS" size="29.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <FontAwesomeIconView fill="#4059a9" glyphName="SEARCH" layoutX="362.0" layoutY="47.0" onMouseClicked="#search" size="20">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </FontAwesomeIconView>
+   </children>
+</AnchorPane>

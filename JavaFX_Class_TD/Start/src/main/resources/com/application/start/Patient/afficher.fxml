@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="425.0" maxWidth="567.0" minHeight="386.0" minWidth="539.0" prefHeight="386.0" prefWidth="539.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.application.start.Dashboard.Patient.Afficher.afficherPatients">
+   <children>
+      <TableView fx:id="Table" layoutX="6.0" layoutY="59.0" prefHeight="247.0" prefWidth="524.0">
+        <columns>
+          <TableColumn fx:id="Nom" prefWidth="96.66668319702148" text="Nom" />
+            <TableColumn fx:id="Prenom" prefWidth="96.66668319702148" text="Prenom" />
+            <TableColumn fx:id="dateNaissance" prefWidth="107.99993896484375" text="D Naissance" />
+            <TableColumn fx:id="CIN" prefWidth="96.66668319702148" text="CIN" />
+            <TableColumn fx:id="Tel" prefWidth="122.66659545898438" text="Tel" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="ok" layoutX="459.0" layoutY="326.0" onAction="#clicikBtn" prefHeight="35.0" prefWidth="62.0" style="-fx-background-color: #0e253a;" text="OK" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

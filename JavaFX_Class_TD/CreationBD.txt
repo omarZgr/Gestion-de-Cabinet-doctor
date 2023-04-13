@@ -1,0 +1,50 @@
+//Name BD 
+gestionCabinet
+
+//Creation Table 
+
+#####Patient#####
+
+CREATE TABLE Patient (
+    patient_id int NOT NULL AUTO_INCREMENT,
+    patient_nom varchar(255) NOT NULL,
+    patient_prenom varchar(255)NOT NULL,
+    pation_tel varchar(255)NOT NULL,
+    patient_cin varchar(255)NOT NULL,
+    patient_dateNass Date NOT NULL,
+    patient_dateCreation Date NOT NULL,
+    PRIMARY KEY (patient_id)
+);
+
+#####User#####
+
+CREATE TABLE Users (
+    user_id int NOT NULL AUTO_INCREMENT,
+    user_nom varchar(255) NOT NULL,
+    user_prenom varchar(255) NOT NULL,
+   user_cin varchar(255) NOT NULL,
+    user_name varchar(255) NOT NULL,
+    user_password varchar(255) NOT NULL,
+    user_dateInscrrire Date NOT NULL,
+    PRIMARY KEY (user_id)
+);
+
+#####Consultation #####
+
+CREATE TABLE Consultation (
+    consultation_id int NOT NULL AUTO_INCREMENT,
+    consultation_descritpion varchar(255),
+    consultation_prix varchar(255) NOT NULL,
+    PRIMARY KEY (consultation_id)
+);
+
+#####Demande #####
+
+CREATE TABLE Demande (
+    consultation_date date not null,
+    patient_id int not null,
+    consultation_id int not null,
+   FOREIGN KEY (patient_id) REFERENCES patient(patient_id),
+    FOREIGN KEY (consultation_id) REFERENCES consultation(consultation_id)
+    
+);

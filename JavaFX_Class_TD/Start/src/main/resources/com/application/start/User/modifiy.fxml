@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="430.0" prefWidth="373.0" style="-fx-background-color: #eee;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.application.start.Dashboard.User.Modifiy.modifiyUser">
+   <children>
+      <VBox layoutY="72.0" prefHeight="286.0" prefWidth="373.0">
+         <children>
+            <AnchorPane prefHeight="57.0" prefWidth="373.0">
+               <children>
+                  <Label layoutX="40.0" layoutY="17.0" prefHeight="25.0" prefWidth="76.0" text="Nom">
+                     <font>
+                        <Font name="Corbel" size="16.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="inputNom" editable="false" focusColor="#327425" layoutX="187.0" layoutY="13.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="57.0" prefWidth="373.0">
+               <children>
+                  <Label layoutX="40.0" layoutY="17.0" prefHeight="25.0" prefWidth="76.0" text="Prenom">
+                     <font>
+                        <Font name="Corbel" size="16.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="inputPrenom" editable="false" focusColor="#34fd10" layoutX="187.0" layoutY="13.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="57.0" prefWidth="373.0">
+               <children>
+                  <Label layoutX="40.0" layoutY="17.0" prefHeight="25.0" prefWidth="76.0" text="UserName">
+                     <font>
+                        <Font name="Corbel" size="16.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="inputUserName" focusColor="#34fd10" layoutX="187.0" layoutY="13.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="57.0" prefWidth="373.0">
+               <children>
+                  <Label layoutX="40.0" layoutY="17.0" prefHeight="25.0" prefWidth="76.0" text="CIN">
+                     <font>
+                        <Font name="Corbel" size="16.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="inputCIN" editable="false" focusColor="#34fd10" layoutX="187.0" layoutY="13.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="57.0" prefWidth="373.0">
+               <children>
+                  <Label layoutX="40.0" layoutY="17.0" prefHeight="25.0" prefWidth="107.0" text="Date Creation">
+                     <font>
+                        <Font name="Corbel" size="16.0" />
+                     </font>
+                  </Label>
+                  <DatePicker fx:id="inputDateCreation" editable="false" layoutX="180.0" layoutY="17.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+      <Label alignment="CENTER" layoutX="70.0" layoutY="14.0" prefHeight="39.0" prefWidth="237.0" style="-fx-underline: true;" text="Information" textFill="#261111">
+         <font>
+            <Font name="Bauhaus 93" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="notification" layoutX="189.0" layoutY="357.0" prefHeight="17.0" prefWidth="99.0" text="Label" textFill="RED" visible="false">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="modifiy" layoutX="275.0" layoutY="390.0" onAction="#clicikBtn" prefHeight="27.0" prefWidth="76.0" style="-fx-background-color: #0e253a;" text="Modifiy" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="reset" layoutX="214.0" layoutY="390.0" onAction="#clicikBtn" prefHeight="5.0" prefWidth="49.0" style="-fx-background-color: #0e253a;" text="reset" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

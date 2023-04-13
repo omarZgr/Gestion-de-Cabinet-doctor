@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="263.0" prefWidth="458.0" style="-fx-background-color: #0e253a;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.application.start.Login">
+   <children>
+      <AnchorPane prefHeight="263.0" prefWidth="351.0" style="-fx-background-color: grey;">
+         <children>
+            <AnchorPane layoutX="6.0" layoutY="46.0" prefHeight="71.0" prefWidth="243.0">
+               <children>
+                  <Label layoutX="7.0" layoutY="23.0" prefHeight="25.0" prefWidth="76.0" text="UserName" textFill="WHITE">
+                     <font>
+                        <Font name="Corbel" size="16.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="userName" layoutX="141.0" layoutY="24.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="6.0" layoutY="117.0" prefHeight="71.0" prefWidth="243.0">
+               <children>
+                  <Label layoutX="7.0" layoutY="23.0" prefHeight="25.0" prefWidth="76.0" text="Password" textFill="WHITE">
+                     <font>
+                        <Font name="Corbel" size="16.0" />
+                     </font>
+                  </Label>
+                  <JFXPasswordField fx:id="password" layoutX="139.0" layoutY="19.0" />
+                  <Label fx:id="notification" layoutX="139.0" layoutY="63.0" prefHeight="17.0" prefWidth="165.0" text="Label" textFill="RED" visible="false">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <JFXButton layoutX="171.0" layoutY="208.0" onMouseClicked="#login" prefHeight="37.0" prefWidth="76.0" style="-fx-background-color: #0e253a;" text="Login" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="263.0" prefWidth="115.0">
+         <children>
+            <FontAwesomeIconView fill="#f6fbff" glyphName="USER" layoutX="41.0" layoutY="63.0" size="50" tabSize="15" text="" wrappingWidth="29.904802322387695" />
+            <Label layoutX="7.0" layoutY="140.0" prefHeight="25.0" prefWidth="111.0" rotate="50.0" text="InfoCabinet" textFill="WHITE">
+               <font>
+                  <Font name="Corbel" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>
